@@ -238,7 +238,7 @@ async function loadData() {
 
   try {
     // Coba dari GitHub Raw terlebih dahulu
-    const githubRawUrl = `https://raw.githubusercontent.com/ReyLanTra/Jadwal-Sholat/main/${year}.json`;
+    const GITHUB_URL = `https://reylantra.github.io/Jadwal-Sholat/public/kab-tegal/${year}.json`;
     console.log(`🔍 Mencoba dari GitHub: ${githubRawUrl}`);
     
     const res = await fetch(githubRawUrl, {
@@ -1093,3 +1093,4 @@ window.JadwalSholatApp = {
   APP_STATE
 
 };
+
