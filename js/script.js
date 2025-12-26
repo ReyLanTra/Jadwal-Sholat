@@ -238,7 +238,7 @@ async function loadData() {
 
   try {
     // Coba dari GitHub Raw terlebih dahulu
-    const githubRawUrl = `https://raw.githubusercontent.com/ReyLanTra/Jadwal-Sholat/main/${year}.json`;
+    const githubRawUrl = `https://raw.githubusercontent.com/ReyLanTra/Jadwal-Sholat/assets/kab-tegal/${year}.json`;
     console.log(`🔍 Mencoba dari GitHub: ${githubRawUrl}`);
     
     const res = await fetch(githubRawUrl, {
@@ -300,7 +300,7 @@ async function loadData() {
     
     // Coba fallback ke Vercel
     try {
-      const vercelUrl = `/${year}.json`;
+      const vercelUrl = `assets/kab-tegal/${year}.json`;
       console.log(`🔄 Fallback ke Vercel: ${vercelUrl}`);
       
       const res = await fetch(vercelUrl);
