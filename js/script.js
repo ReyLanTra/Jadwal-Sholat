@@ -300,7 +300,7 @@ async function loadData() {
     
     // Coba fallback ke Vercel
     try {
-      const vercelUrl = `../kab-tegal/${year}.json`;
+      const vercelUrl = `./kab-tegal/${year}.json`;
       console.log(`🔄 Fallback ke Vercel: ${vercelUrl}`);
       
       const res = await fetch(vercelUrl);
