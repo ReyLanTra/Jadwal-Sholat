@@ -300,7 +300,7 @@ async function loadData() {
     
     // Coba fallback ke Vercel
     try {
-      const vercelUrl = `/${year}.json`;
+      const vercelUrl = `public/kab-tegal/${year}.json`;
       console.log(`🔄 Fallback ke Vercel: ${vercelUrl}`);
       
       const res = await fetch(vercelUrl);
@@ -1091,4 +1091,5 @@ window.JadwalSholatApp = {
   checkCurrentPrayerTime,
   CONFIG,
   APP_STATE
+
 };
